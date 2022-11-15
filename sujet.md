@@ -1,4 +1,5 @@
 # Practical Session #1: Introduction
+## Thomas Delapart Kilian Cornec
 
 1. Find in news sources a general public article reporting the discovery of a software bug. Describe the bug. If possible, say whether the bug is local or global and describe the failure that manifested its presence. Explain the repercussions of the bug for clients/consumers and the company or entity behind the faulty program. Speculate whether, in your opinion, testing the right scenario would have helped to discover the fault.
 
@@ -22,7 +23,16 @@ For Lockheed part better tests would not have prevented this error beacause this
 
 3. Netflix performs experiences like randomly select vm isntances which are working and shut them down, or they simulate error between Netflix service and check if "the system degrades gracefully". To assure that these tests do not make fail services, they perform them only during working hour. The result of these tests is a service which is available even during time with issue. But Netflix is not the only company who perform these type of experiments. To finnish with, Chaos Engineering could be used in company who has to delivered very sensitive project like nuclear one for example. Indeed it's easly understading that the slightest error could have terrible effects.
 
-4. TODO
+4. WebAssembly defines a portable binary-code format for executable programs, this low-level, safe and portable language has a formal specification. 
+The main advantages of having a formal specification are :
+- The language's correctness is prooved by the formal specification.
+- You can use proove your program too by using the formal specification.
+- Having a formal specification remove the ambiguity of the language.
+- The formal specification is also a good documentation of the language.
+
+However, the formal specification is not enough to ensure that the implementations are correct. Indeed, the formal specification is a mathematical model of the language and it is not possible to prove that the implementations are correct. So, the implementations should be tested.
    
    
 5. The main advantages of mechanized specification is this is possible to performe formal analysis and verification. Furetheremore it helps to improve the orginal formal specification because it was not formally specified. Also it allows to derived on others artifacts like a separate executable interpreter and type checker. To finnish with this new specification is suffisand to pass the WebAssembly test and so to be executed "in the wild".
+
+Despite that the mechanized specification is a good tool to verify the original formal specification but it is not enough to ensure that the implementations are correct. Indeed, It is here also not possible to prove that the implementations are correct. So, the implementations should be tested.
