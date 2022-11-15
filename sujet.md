@@ -25,4 +25,4 @@ For Lockheed part better tests would not have prevented this error beacause this
 4. TODO
    
    
-5. TODO
+5. The main advantages of mechanized specification is this is possible to performe formal analysis and verification. Furetheremore it helps to improve the orginal formal specification because it was not formally specified. Also it allows to derived on others artifacts like a separate executable interpreter and type checker. To finnish with this new specification is suffisand to pass the WebAssembly test and so to be executed "in the wild".
