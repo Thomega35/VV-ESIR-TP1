@@ -20,8 +20,7 @@ For Lockheed part better tests would not have prevented this error beacause this
 
 2. [The CollectionUtils.removeAll method calls the ListUtils.retainAll method instead of the ListUtils.removeAll method.](https://issues.apache.org/jira/projects/COLLECTIONS/issues/COLLECTIONS-219?filter=allissues)The COLLECTIONS-219 was a bug in the version 3.2.1 that was solved in the version 4.0 of the project. The bug was a local bug that was caused by a wrong implementation of the method `public static Collection removeAll(Collection collection, Collection remove)`. The method was supposed to remove all the elements of the collection `remove` from the collection `collection`. However, the implementation was wrong and the method was calling the method `retainAll` instead of `removeAll`. The solution was to replace the call to `retainAll` by a call to `removeAll`. The bug being a typo, no test was added to ensure that the bug would not reappear in the future.
 
-3. TODO
-   
+3. Netflix performs experiences like randomly select vm isntances which are working and shut them down, or they simulate error between Netflix service and check if "the system degrades gracefully". To assure that these tests do not make fail services, they perform them only during working hour. The result of these tests is a service which is available even during time with issue. But Netflix is not the only company who perform these type of experiments. To finnish with, Chaos Engineering could be used in company who has to delivered very sensitive project like nuclear one for example. Indeed it's easly understading that the slightest error could have terrible effects.
 
 4. TODO
    
